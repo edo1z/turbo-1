@@ -4,15 +4,25 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  hoge:
-    specifier: link:../hoge
-    version: link:../hoge
+importers:
 
-devDependencies:
-  typescript:
-    specifier: ^5.0.4
-    version: 5.0.4
+  .: {}
+
+  hoge:
+    devDependencies:
+      typescript:
+        specifier: ^5.0.4
+        version: 5.0.4
+
+  hoge2:
+    dependencies:
+      hoge:
+        specifier: link:../hoge
+        version: link:../hoge
+    devDependencies:
+      typescript:
+        specifier: ^5.0.4
+        version: 5.0.4
 
 packages:
 
