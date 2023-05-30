@@ -32,8 +32,8 @@ importers:
   hoge2:
     dependencies:
       hoge:
-        specifier: link:../hoge
-        version: link:../hoge
+        specifier: link:../hoge/dist
+        version: link:../hoge/dist
     devDependencies:
       typescript:
         specifier: ^5.0.4

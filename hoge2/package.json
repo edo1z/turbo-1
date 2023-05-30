@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "hoge": "link:../hoge"
+    "hoge": "link:../hoge/dist"
   },
   "devDependencies": {
     "typescript": "^5.0.4"
